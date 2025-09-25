@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copter CV V3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            opacity: 1;
+            /* background-color: rgb(255, 255, 255); */
+            background-color: #000C58;
+        }
+
+        /* manu */
+        .box {
+            margin: 0;
+            padding: 0;
+            background-color: #060135;
+            grid-area: box;
+        }
+
+        .bra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px;
+            padding: 0px 50px;
+            background-color: #0d003b;
+        }
+
+        .name-bra h1 {
+            color: rgb(221, 221, 221);
+            font-family: "Bebas Neue";
+        }
+
+        .manu-bra a {
+            text-decoration: none;
+            font-family: "Roboto";
+            color: white;
+            margin: 0px 10px;
+        }
+
+        .manu-bra a:hover {
+            cursor: pointer;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        /* manu */
+        /* part1 */
+        /* title */
+        .partone {
+            margin-bottom: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-areas: "title-partone img-a1"; */
+        }
+
+        .title-partone {
+            margin-left: 100px;
+        }
+
+        .title-one {
+            width: 100%;
+        }
+
+        .title-one a {
+            font-family: "Bebas Neue";
+            color: white;
+            text-decoration: none;
+        }
+
+        .text-a1 {
+            font-family: "Bebas Neue";
+            line-height: 0;
+            font-size: 100px;
+        }
+
+        .text-a2 {
+            line-height: 0.5;
+            font-family: "Prompt";
+            font-weight: 100;
+            font-size: 20px;
+        }
+
+        .contact-social {
+            display: flex;
+        }
+
+        .contact {
+            display: flex;
+            background-color: #7A99E9;
+            color: #000000;
+            padding: 0px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: "Roboto";
+        }
+
+        .contact:hover{
+            cursor: pointer;
+            background-color: #000000;
+            color: #7A99E9;
+        }
+
+        #contactme {
+            padding-right: 20px;
+            font-size: 12px;
+        }
+
+        .social {
+            display: flex;
+        }
+
+        .social a {
+            margin: 0px 10px;
+            padding: 10px;
+            background-color: rgb(27, 27, 27);
+            color: #7A99E9;
+            border-radius: 100px;
+        }
+
+        .social a:hover{
+            cursor: pointer;
+            background-color: #c4c4c488;
+            color: #ffffff;
+        }
+
+        /* content */
+        #img-a1 {
+            margin-top: 60px;
+            margin-right: 0px;
+        }
+
+        /* part1 */
+        /* part2 */
+        /* title */
+        .box2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-areas: "title-partone img-a1"; */
+        }
+
+        .title {
+            margin-left: 100px;
+            padding-top: 0px;
+            font-family: "Bebas Neue";
+            color: white;
+            font-size: 100px;
+        }
+
+        /* content */
+        .content-partwo {
+            padding-top: 100px;
+            font-family: "Prompt";
+            line-height: 0%;
+            color: white;
+            line-height: 0.5;
+        }
+
+        .text-b1 {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .text-b2 {
+            font-size: 17px;
+            font-weight: 200;
+            color: #C7C7C7;
+        }
+
+        .download-social {
+            display: flex;
+        }
+
+        .contact-two {
+            display: flex;
+            background-color: #7A99E9;
+            color: #000000;
+            padding: 3px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: "Roboto";
+        }
+        
+        .contact-two:hover{
+            cursor: pointer;
+            background-color: #000000;
+            color: #7A99E9;
+        }
+
+        #downloadme {
+            padding-right: 20px;
+            font-size: 12px;
+        }
+
+        /* part2 */
+        /* part3 */
+        .box3 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        .box3 img {
+            width: "1430px";
+            height: "709px";
+            border-radius: 30px;
+        }
+
+        /* part3 */
+        /* part4 */
+        /* title */
+        .box4 {
+            margin: 90px 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-areas: "title-partone img-a1"; */
+        }
+
+        /* content */
+        .contact-partfour {
+            margin-top: 10px;
+        }
+
+        .part-five {
+            line-height: 0.5;
+            color: white;
+        }
+
+        .deta {
+            margin-top: 20px;
+
+        }
+
+        .deta a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: "Manrope";
+            color: rgb(214, 214, 214);
+            border: 1px solid rgb(105, 105, 105);
+            border-radius: 30px;
+            margin-right: 10px;
+            margin-top: 10px;
+            padding: 10px 30px;
+        }
+
+        .deta a:hover{
+            font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.699);
+            color: #000000;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        /* part4 */
+        /* part5 */
+        /* title */
+        .box5 {
+            margin-bottom: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-areas: "title-partone img-a1"; */
+        }
+
+        /* content */
+        .title-partfive {
+            font-family: "Prompt";
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 130px;
+        }
+
+
+
+        .timeframe {
+            color: #C7C7C7;
+            font-size: 15px;
+            margin-top: 30px;
+
+        }
+
+        .body-exterien {
+            font-family: "Prompt";
+            margin-top: 110px;
+
+        }
+
+        .contact-exterien {
+            color: #C7C7C7;
+            line-height: 5px;
+        }
+
+        /* part5 */
+        /* part6 */
+        /* title */
+        .box6 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-areas: "title-partone img-a1"; */
+        }
+
+
+        .connect {
+            color: white;
+            font-family: "Bebas Neue";
+            margin-left: 130px;
+            font-size: 100px;
+
+        }
+
+        .let{
+            line-height: 0;
+        }
+
+        .contact-connect {
+            line-height: 20px;
+            font-family: "Prompt";
+            font-weight: 100;
+            font-size: 20px;
+            letter-spacing: 0px;
+        }
+
+        .social-connect{
+            height: 10px;
+        }
+
+        .social-connect i {
+            font-size: 30px;
+            margin-right: 10px;
+            color: #7A99E9;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .social-connect i:hover{
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.712);
+            background-color: #000000;
+        }
+
+        /* content */
+        .from {
+            margin-right: 130px;
+            color: #C7C7C7;
+            font-family: "Prompt";
+            margin-top: 50px;
+
+        }
+
+        .input {
+            display: block;
+            width: 100%;
+            height: 30px;
+            background-color: #060135;
+            border-radius: 5px;
+        }
+
+        .message-input {
+            display: block;
+            width: 100%;
+            height: 90px;
+            background-color: #060135;
+            border-radius: 5px;
+        }
+
+        .submit {
+            display: inline-block;
+            background-color: #7A99E9;
+            color: #000000;
+            border-radius: 50px;
+            margin-top: 30px;
+            padding: 10px 30px;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Prompt";
+        }
+
+        .submit:hover{
+            cursor: pointer;
+            background-color: #000000;
+            color: #7A99E9;
+        }
+
+        .footer {
+            margin: 100;
+            padding: 20px 0px;
+        }
+
+        .footer p {
+            color: #C7C7C7;
+            font-size: 15px;
+            text-align: center;
+        }
+
+
+        /* part6 */
+        /* part7 */
+        .box7 {
+            margin: 30px 0px;
+            text-align: center;
+            font-family: "Prompt";
+            color: #C7C7C7;
+        }
+
+
+        hr {
+            border: 0.1px solid #48484898;
+            margin: 0px 3%;
+        }
+
+        /* part7 */
+    </style>
+</head>
+
+<body>
+    <!-- manu -->
+    <div class="bra">
+        <div class="name-bra">
+            <h1>Jirayu Nitiraungwetchkul</h1>
+        </div>
+        <div class="manu-bra">
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <!-- manu -->
+    <!-- part1 -->
+    <div class="partone">
+        <div class="title-partone">
+            <div class="title-one">
+                <a href="#">
+                    <p class="text-a1">HI, I AM</p>
+                    <p class="text-a1" style="margin-bottom: 60px;">Jirayu J.</p>
+                    <p class="text-a2">นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย</p>
+                    <p class="text-a2">ที่มีความหลงใหลในการสร้าง เว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้</p>
+                </a>
+            </div>
+            <div class="contact-social">
+                <div class="contact">
+                    <p id="contactme">CONTACT ME</p>
+                    <p style="text-align: center; margin: 9px 0px;">●</p>
+                </div>
+                <div class="social">
+                    <a href="in"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="img-a1">
+            <img src="./img/a1.png" width="535px" height="669px" ; alt="">
+        </div>
+    </div>
+    <!-- part1 -->
+    <hr>
+    <!-- part2 -->
+    <div class="box2">
+        <p class="title">ABOUT ME</p>
+        <div class="content-partwo">
+            <h2 class="text-b1">
+                <p>ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงาน</p>
+                <p>อยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้น</p>
+                <p>ในการ ทำงานมีพื้นฐานการศึกษาด้าน</p>
+                <p>วิศวกรรมซอฟต์แวร์</p>
+            </h2>
+            <h6 class="text-b2">
+                <P>ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์</P>
+                <P>มีความกระตือรือร้นและอยากรู้อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ</P>
+                <P>ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบ</P>
+                <P>เว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิฉัน/ผมชอบเล่นฟุตบอล ถ่ายภาพ และเล่นเกม</P>
+                <P>FIFA, Diabloกำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ</P>
+            </H6>
+            <div class="download-social">
+                <div class="contact-two">
+                    <p id="downloadme">Download Resume</p>
+                    <p style="text-align: center; margin: 9px 0px;">●</p>
+                </div>
+                <div class="social">
+                    <a href="in"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- part2 -->
+    <!-- part3 -->
+    <div class="box3">
+        <img src="./img/a2.png" alt="">
+    </div>
+    <!-- part3 -->
+    <hr>
+    <!-- part4 -->
+    <div class="box4">
+        <div class="title">
+            MY CAPABILTIES
+        </div>
+        <div class="contact-partfour">
+            <div class="part-five">
+                <p>ผมมองหาโอกาสในการเพิ่มทักษะใหม่ๆ อยู่เสมอ ทั้งการพัฒนาฟรอนท์เอนด์ แบล็กเอนต์</p>
+                <p>การออกแบบ UX/UI ฐานข้อมูล</p>
+            </div>
+            <div class="deta">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JAVASCRIPT</a>
+                <a href="#">FLUTTER</a>
+                <br />
+                <a href="#">DATA</a>
+                <a href="#">ioT</a>
+                <a href="#">REACCT</a>
+                <a href="#">DATABASE</a>
+            </div>
+        </div>
+    </div>
+    <!-- part4 -->
+    <hr>
+    <!-- part5 -->
+    <div class="box5">
+        <div>
+            <p class="title">MY EXPERIEN</p>
+        </div>
+        <div class="body-exterien">
+            <div class="freelance">
+                <div class="title-partfive">
+                    <p>Freelance Developer</p>
+                    <p class="timeframe">Nov 2023 — Present </p>
+                </div>
+                <div class="contact-exterien">
+                    <p>พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้ React.js ทำงานร่วมกับทีม</p>
+                    <p>ออกแบบ UX/UI เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจปรับปรุงความเร็วในการโหลด</p>
+                    <p>เว็บไซต์ด้วยเทคนิคการเพิ่มประสิทธิภาพต่างๆร่วมพัฒนาและดูแลไลบรารีคอมโพเนนต์ภายใน</p>
+                    <p>องค์กร</p>
+                </div>
+            </div>
+            <div class="front-end">
+                <div class="title-partfive">
+                    <p>Front-End Intern</p>
+                    <p class="timeframe">Sep 2023 — Nov 2023</p>
+                </div>
+                <div class="contact-exterien">
+                    <p>พัฒนาเว็บไซต์ลูกค้าโดยใช้ HTML, CSS และ JavaScript</p>
+                    <p>ช่วยปรับปรุงการเข้าถึง (Accessibility) ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG</p>
+                    <p>ทำงานร่วมกับทีมแบ็คเอนด์เพื่อเชื่อมต่อ API</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- part5 -->
+    <hr>
+    <!-- part6 -->
+    <div class="box6">
+        <div class="connect">
+            <div class="title-connect">
+                <p class="let">Let’s connect</p>
+                <p class="contact-connect">Say hello at s6852d10011@sau.ac.th</p>
+                <p class="contact-connect">For more info, here’s my resume</p>
+            </div>
+            <div class="social-connect">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="from">
+            <p>Name</p>
+            <div class="input"></div>
+            <p>Email</p>
+            <div class="input"></div>
+            <p>Subiect</p>
+            <div class="input"></div>
+            <p>Message</p>
+            <div class="message-input"></div>
+            <p class="submit">SUBMIT</p>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+    <!-- part6 -->
+    <hr>
+    <!-- part7 -->
+    <div class="box7">
+        <p>© 2025 Created by SAU-Dev-Team</p>
+    </div>
+
+    <!-- part7 -->
+</body>
+
+</html>
